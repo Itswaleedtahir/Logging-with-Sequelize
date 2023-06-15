@@ -1,3 +1,4 @@
+//Controller
 module.exports.updateProfile = async (req, res) => {
     try {
         const userId = req.user.id; // Assuming you have a user object available in the request
