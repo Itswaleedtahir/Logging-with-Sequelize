@@ -1,3 +1,4 @@
+//Middleware
 const UserActivity = require('../models/UserActivity');
 
 function logUserActivity(userId, route, beforeChanges, afterChanges) {
