@@ -14,6 +14,7 @@ module.exports.updateProfile = async (req, res) => {
         const result = await Users.findByPk(req.user.id);
         const afterChanges = result.dataValues;
         
+        //Function to handle data dump
         logUserActivity(userId, route, beforeChanges, afterChanges);
 
         return res.json({ result, message: 'profile updated successfully' })
