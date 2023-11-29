@@ -20,6 +20,6 @@ module.exports.updateProfile = async (req, res) => {
         return res.json({ result, message: 'profile updated successfully' })
     } catch (e) {
         console.log(e);
-        return res.json({ message: e.message, status: 0 });
+        return res.status(200).json({ message: e.message, status: 0 });
     }
 };
